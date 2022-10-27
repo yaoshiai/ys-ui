@@ -71,19 +71,19 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: docs/.vitepress/dist
-          git-config-name: ElementPlusBot
-          git-config-email: hello@element-plus.org
+          git-config-name: YsUi
+          git-config-email: 857990739@qq.com
           commit-message: website deploy
 
       - name: Deploy to vercel
         uses: JamesIves/github-pages-deploy-action@v4.3.4
         with:
-          token: ${{ secrets.EP_BOT_TOKEN }}
+          token: ${{ secrets.YSUI_BOT_TOKEN }}
           branch: main
           folder: docs/.vitepress/dist
           repository-name: element-plus/vercel-publish
-          git-config-name: ElementPlusBot
-          git-config-email: hello@element-plus.org
+          git-config-name: YsUi
+          git-config-email: 857990739@qq.com
 
       - name: Sync
         env:
